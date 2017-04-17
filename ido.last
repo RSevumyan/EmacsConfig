@@ -1,0 +1,306 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/robi/.emacs.d/" . "lisp/")
+ ("/usr/share/qemu/" . "keymaps/")
+ ("/home/robi/qemu/" . "share/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/interfaces/" . "gui/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/" . "interfaces/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/" . "nir/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/" . "sevumyan/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/" . "m16502/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/" . "kaf12/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/" . "mephi/")
+ ("/home/robi/workspace/NIR/nir/src/main/java/" . "ru/")
+ ("/home/robi/workspace/NIR/nir/src/main/" . "java/")
+ ("/home/robi/workspace/NIR/nir/src/" . "main/")
+ ("/home/robi/workspace/NIR/nir/" . "src/")
+ ("/home/robi/workspace/NIR/" . "nir/")
+ ("/home/robi/workspace/CLion/NIR_Project/" . "resources/")
+ ("/home/robi/workspace/CLabs/Task_1/Part1_1/" . "src/")
+ ("/usr/share/tomcat8/" . "conf/")
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/src/main/" . "classpath/")
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/src/" . "main/")
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/" . "src/")
+ ("/home/robi/Документы/работа/workspace/pampa/" . "pampa-webapp/")
+ ("/home/robi/Документы/работа/workspace/" . "pampa/")
+ ("/home/robi/.m2/" . "repository/")
+ ("/home/robi/workspace/CLion/Task5/" . "Server/")
+ ("/home/robi/workspace/CLion/" . "NIR_Project/")
+ ("/home/robi/workspace/CLabs/Task_3/Part3_3/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_3/" . "Part3_3/")
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/Моделирование/" . "Examples/")
+ ("/home/robi/workspace/CLabs/Task_2/Part2_11/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_2/Part2_10/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_2/Part2_9/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_2/Part2_8/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_2/Part2_7/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_2/Part2_4/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_2/" . "Part2_11/")
+ ("/home/" . "robi/")
+ ("/usr/share/" . "qemu/")
+ ("/usr/" . "share/")
+ ("/" . "usr/")
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/АВС/" . "Пример_рефератов/")
+ ("/home/robi/workspace/CLabs/Task_1/Part1_8/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_1/Part1_7/" . "src/")
+ ("/home/robi/workspace/CLabs/Task_1/Part1_6/" . "File/")
+ ("/home/robi/workspace/CLabs/Task_1/" . "Part1_1/")
+ ("/home/robi/workspace/CLabs/" . "Task_1/")
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/" . "АВС/")
+ ("/home/robi/Документы/учеба/" . "IT_learning_books/")
+ ("/home/robi/Документы/" . "учеба/")
+ ("/home/robi/workspace/" . "NIR/")
+ ("/home/robi/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/robi/"
+ "/home/robi/qemu/share/"
+ "/home/robi/.emacs.d/lisp/"
+ "/home/robi/Документы/учеба/IT_learning_books/"
+ "/home/robi/qemu/"
+ "/usr/share/qemu/keymaps/"
+ "/etc/"
+ "/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/interfaces/gui/"
+ "/home/robi/workspace/NIR/nir/"
+ "/home/robi/workspace/NIR/"
+ "/home/robi/workspace/CLion/Task5/Server/"
+ "/home/robi/workspace/CLion/NIR_Project/resources/"
+ "/home/robi/workspace/CLabs/Task_1/Part1_1/src/"
+ "/usr/share/tomcat8/conf/"
+ "/home/robi/Документы/работа/workspace/pampa/pampa-webapp/src/main/classpath/"
+ "/home/robi/.m2/"
+ "/home/robi/Документы/учеба/Магистратура_1_семестр/АВС/"
+ "/home/robi/workspace/CLabs/Task_3/Part3_3/src/"
+ "/home/robi/workspace/CLabs/RemoteSystemsTempFiles/"
+ "/home/robi/Документы/учеба/Магистратура_1_семестр/Моделирование/Examples/"
+ "/usr/share/virtualbox/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_11/src/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_10/src/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_9/src/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_8/src/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_7/src/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_4/src/"
+ "/home/robi/builds/"
+ "/home/robi/workspace/CLabs/Tasks/"
+ "/home/robi/Документы/учеба/Магистратура_1_семестр/АВС/Пример_рефератов/"
+ "/home/robi/.designer/"
+ "/home/robi/workspace/CLabs/Task_1/Part1_6/File/"
+ "/home/robi/Документы/учеба/Магистратура_1_семестр/Моделирование/"
+ "/home/robi/workspace/CLabs/Task_2/Part2_8/Files/"
+ "/home/robi/workspace/CLabs/Task_1/Part1_8/src/"
+ "/home/robi/workspace/CLabs/Task_1/Part1_7/src/"
+ "/home/robi/workspace/CLabs/Task_1/Part1_6/src/"
+ "/home/robi/workspace/CLabs/Task_1/Part11/File/"
+ "/home/robi/Документы/учеба/Магистратура_1_семестр/English/"
+ "/home/robi/workspace/Python/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".bashrc_old"
+ ".basrc"
+ ".bashrc"
+ ".emacs"
+ "note"
+ "multi-term.el"
+ "qemu-start.sh"
+ "coordinates.txt"
+ "pipe.txt"
+ ".bash_history"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/robi/" (22771 29804 441012 287000) ".esd_auth" ".Xmodmap" "workspace/" ".pulse-cookie" ".ssh/" "Шаблоны/" ".mono/" ".bashrc_old" ".gnome/" ".ipython/" ".mozilla/" "builds/" ".mplayer/" ".wine/" ".ssr/" ".CLion2016.2/" ".x2go/" ".emacs" ".ICEauthority" ".macromedia/" "Общедоступные/" ".lesshst" "Документы/" "Видео/" ".java/" ".emacs.d/" "Загрузки/" ".tooling/" ".local/" ".gnome2_private/" "../" ".x2goclient/" ".dir_colors~" ".gnome2/" ".gitconfig.backup" ".cache/" ".Skype/" ".IntelliJIdea2016.3/" ".gnupg/" "Изображения/" ".dir_colors" "Рабочий стол/" ".adobe/" ".fonts/" ".steampid" ".bash_logout" ".steam/" ".pki/" ".designer/" ".thunderbird/" ".config/" ".basrc" ".putty/" "m2/" ".conky/" "Музыка/" ".tomcat/" ".m2/" ".recently-used" ".gitconfig" ".bash_profile" "./" ".emacs~" "Заметки~" ".bash_history" ".basrc~" ".steampath" ".dia/" "qemu/" ".swt/" ".eclipse/" ".subversion/")
+
+ ("/usr/share/virtualbox/" (22771 27919 630363 131000) "VBoxSysInfo.sh" "../" "VBoxKernelModulesLoad.sh~" "VBoxCreateUSBNode.sh" "rdesktop-vrdp-keymaps/" "VBoxKernelModulesLoad.sh" "./" "nls/")
+
+ ("/usr/share/tomcat8/conf/" (22771 27912 657029 586000) "tomcat-users.xml" "Catalina/" "catalina.properties" "catalina.policy" "logging.properties" "../" "server.xml" "tomcat-users.xsd" "tomcat-users.xml.pacnew" "web.xml" "./" "context.xml")
+
+ ("/etc/" (22771 28802 423722 560000) "DIR_COLORS" "brltty.conf" "lirc/" "profile" "gshadow.pacnew" "makepkg.conf" "sudoers.d/" "locale.gen" "gdm/" "ssl/" "man_db.conf" "request-key.conf" "samba/" "sound/" "issue" "sysctl.d/" "logcheck/" "tomcat7/" "vde2/" "fuse.conf" "avahi/" "iproute2/" "vbox/" "libao.conf" "gshadow-" "hosts" "logrotate.d/" "gtk-3.0/" "request-key.d/" "rsyncd.conf" "asound.conf" "localtime" "mdadm.conf" ".pwd.lock" "hadoop/" "vpnc/" "udev/" "vconsole.conf" "shadow.pacnew" "ts.conf" "nxagent/" "crypttab" "default/" "geoclue/" "systemd/" "krb5.conf" ".updated" "rc_maps.cfg" "ld.so.cache" "ipsec.secrets" "arch-release" "iptables/" "elasticsearch/" "securetty" "gai.conf" "profile.d/" "gemrc" "mail.rc" "wpa_supplicant/" "mplayer/" "libpaper.d/" "cifs-utils/" "gshadow" "xml/" "java-8-openjdk/" "irman.conf" "../" "nsswitch.conf" "ppp/" "gnome-vfs-mime-magic" "X11/" "openldap/" "sensors.d/" "machine-id" "trusted-key.key" "gnome-vfs-2.0/" "vimrc" "modules-load.d/" "apache-ant/" "pango/" "machine-info" "grub.d/" "sensors3.conf" "login.defs" "fstab" "rpc" "conf.d/" "initcpio/" "locale.conf" "security/" "drirc" "group.pacnew" "slsh.rc" "netctl/" "protocols" "pacman.conf" "lvm/" "group" "papersize" "ystemctl stop openswan" "ImageMagick-6/" "solr/" "nscd.conf" "fonts/" "hostname" "passwd.pacnew" "locale.gen.pacnew" "motd" "ld.so.conf" "brlapi.key" "ethertypes" "kernel/" "services" "java-7-openjdk/" "resolv.conf.bak" "mime.types" "polkit-1/" "rc_keymaps/" "mkinitcpio.conf" "shadow-" "modprobe.d/" "ssh/" "passwd" "dhcpcd.duid" "dhcpcd.conf" "shells" "udisks2/" "hosts~" "vde/" "xl2tpd/" "mke2fs.conf" "tmpfiles.d/" "logrotate.conf" "libgda-5.0/" "mtab" "mono/" "ld.so.conf.d/" "vdpau_wrapper.cfg" "healthd.conf" "httpd/" "ca-certificates/" "skel/" "inputrc" "binfmt.d/" "group-" "sudoers" "sudoers.pacnew" "gtk-2.0/" "bash.bashrc" "depmod.d/" "dbus-1/" "bluetooth/" "shadow" "environment" "./" "printcap" "gconf/" "dkms/" "tomcat8/" "nanorc" "x2go/" "xinetd.d/" "texmf/" "adobe/" "pulse/" "netconfig" "passwd-" "resolv.conf" "mkinitcpio.d/" "pcmcia/" "NetworkManager/" "pam.d/" "bash.bash_logout" "pkcs11/" "bonobo-activation/" "libnl/" "cups/" "pacman.d/" "host.conf" "UPower/" "os-release" "libreoffice/" "xdg/")
+
+ ("/home/robi/.emacs.d/lisp/" (22742 51307 295908 813000) "multi-term.el" "out.ogv" "../" "multi-term.el~" "./")
+
+ ("/home/robi/qemu/share/" (22763 55841 25292 228000) "../" "ILMerge.msi" "StreetViewerBin/" "#note#" "StreetViewerCode/" "note~" "note.txt" "./")
+
+ ("/home/robi/.emacs.d/" (22762 49523 253110 571000) "session.10b4b1f04311137ba149047411539678700000022850055" "elpa/" "../" "ido.last~" "auto-save-list/" ".python-environments/" "./" "ido.last" "lisp/")
+
+ ("/home/robi/Документы/учеба/IT_learning_books/" (22472 22371 951997 601000) "../" "Python/" "./")
+
+ ("/home/robi/Документы/учеба/" (22725 50263 229886 241000) "IT_learning_books/" "../" "Архив/" "./" "Магистратура_2_семестр/")
+
+ ("/home/robi/Документы/учеба/Магистратура_2_семестр/" (22737 31927 883642 831000) "Методы_оптимизации/" "../" "Теория_кодирования_2/" "Философия/" "./")
+
+ ("/home/robi/Документы/учеба/Магистратура_2_семестр/Методы_оптимизации/" (22734 60234 995199 472000) "Задание_БДЗ/" "Задание_1.jpg" "Задание_2.jpg" "../" "./")
+
+ ("/home/robi/qemu/" (22693 64500 341083 293000) "share/" "win.iso" "../" "win" "qemu-start.sh~" "./" "qemu-start.sh")
+
+ ("/home/robi/workspace/NIR/nir/" (22680 64075 412327 915000) "pom.xml" "builds/" ".gitignore~" "../" ".git/" "src/" "resources/" "StreetViews/" ".idea/" "nir.iml" "./" "target/" ".gitignore")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/interfaces/gui/" (22680 63820 178986 832000) "GUIInterface.java" "../" "GUIInterface.form" "./")
+
+ ("/home/robi/Загрузки/" (22692 50705 629847 465000) "torrents/" "clion-2016.2.2/" "h2/" "../" "GoogleMapsApiClient-master.zip" "Rob.rar" "settings.jar" "Win7.SP1.x86-x64.Rus-Eng.18in1.IE11+.Activated.v4/" "SWUpdate_2.2.8.32.ZIP" "./")
+
+ ("/usr/share/qemu/keymaps/" (22617 42733 0 0) "fo" "fr-ch" "lv" "cz" "de-ch" "hr" "nl" "pt-br" "sv" "bepo" "es" "lt" "et" "../" "ar" "fr" "pl" "da" "it" "en-gb" "fr-be" "th" "ru" "mk" "pt" "fr-ca" "de" "ja" "tr" "sl" "no" "modifiers" "./" "nl-be" "hu" "is" "en-us" "common" "fi")
+
+ ("/usr/share/qemu/" (22686 3974 180125 794000) "vgabios-isavga.bin" "bios-coreboot.bin" "pxe-e1000.rom" "vgabios-cirrus.bin" "efi-rtl8139.rom" "qemu-icon.bmp" "linuxboot_dma.bin" "linuxboot.bin" "trace-events-all" "efi-e1000e.rom" "efi-e1000.rom" "vgabios-qxl.bin" "pxe-rtl8139.rom" "pxe-pcnet.rom" "vgabios-stdvga.bin" "../" "multiboot.bin" "bios.bin" "kvmvapic.bin" "bios-csm.bin" "efi-virtio.rom" "pxe-eepro100.rom" "efi-vmxnet3.rom" "efi-eepro100.rom" "bios-256k.bin" "efi-ne2k_pci.rom" "qemu_logo_no_text.svg" "keymaps/" "vgabios-virtio.bin" "vgabios.bin" "./" "efi-pcnet.rom" "pxe-ne2k_pci.rom" "vgabios-vmware.bin" "pxe-virtio.rom" "sgabios.bin")
+
+ ("/usr/share/" (22688 45381 930252 650000) "gstreamer-1.0/" "lirc/" "webkitgtk-3.0/" "firebird/" "evolution-data-server/" "dict/" "common-lisp/" "guile/" "gtk-engines/" "dconf/" "icons/" "gdm/" "readline/" "zenity/" "help/" "gedit/" "telepathy/" ".mono/" "samba/" "themes/" "alsa/" "skype/" "gnome-video-effects/" "espeak-data/" "myspell/" "vde2/" "enchant/" "avahi/" "gnome-bluetooth/" "libgpg-error/" "webkitgtk-1.0/" "pkgconfig/" "elasticsearch_old/" "gtk-3.0/" "vala/" "texmf-dist/" "osinfo/" "xapian-core/" "liblangtag/" "nano/" "bash-completion/" "t1lib/" "wine/" "eog/" "gnome-session/" "classes/" "kde4/" "pygtk/" "libexttextcat/" "devhelp/" "misc/" "sip/" "mkinitcpio/" "xdg-desktop-portal/" "redland/" "info/" "cracklib/" "omf/" "systemd/" "groff/" "tlpkg/" "gutenprint/" "xsessions/" "lua/" "application-registry/" "empathy/" "tracker/" "antler/" "farstream/" "gnome-settings-daemon/" "caribou/" "gtk-doc/" "graphite2/" "elasticsearch/" "libtool/" "zsh/" "emacs/" "xcb/" "Thunar/" "gettext/" "nx/" "yelp-tools/" "sushi/" "libwacom/" "licenses/" "gnome-shell/" "libgweather/" "iso-codes/" "xml/" "graphviz/" "automake-1.15/" "zoneinfo/" "gvfs/" "git/" "pixmaps/" "et/" "libftdi/" "X11/" "gnome-user-share/" "gnome-control-center/" "gapi-2.0/" "boostbook/" "hspell/" "libalpm/" "apache-ant/" "i18n/" "terminfo/" "os-prober/" "wayland-sessions/" "libthai/" "makepkg/" "itstool/" "sounds/" "mobile-broadband-provider-info/" "liblouis/" "java/" "gtksourceview-3.0/" "anjuta/" "gobject-introspection-1.0/" "hunspell/" "intltool/" "idl/" "awk/" "gettext-0.19.8/" "color/" "gir-1.0/" "ss/" "icu/" "cogl/" "glib-2.0/" "shared-color-targets/" "fish/" "dia/" "mime-info/" "ImageMagick-6/" "gnome-online-accounts/" "tabset/" "cdrdao/" "file-roller/" "libcaca/" "defaults/" "gnome-2.0/" "cmake/" "hdf5_examples/" "grilo-plugins/" "pulseaudio/" "mousetweaks/" "autoconf/" "pygobject/" "autoconf-archive/" "yelp-xsl/" "gnome/" "fonts/" "yelp/" "dhclient/" "jack-audio-connection-kit/" "guake/" "texinfo/" "gcr-3/" "gnupg/" "ghostscript/" "gdb/" "vim/" "ibus/" "qt/" "polkit-1/" "grub/" "dhcpcd/" "wayland/" "imlib2/" "backgrounds/" "gnome-background-properties/" "libgc-mono/" "wayland-protocols/" "alacarte/" "vala-0.34/" "glade/" "m17n/" "libgnomekbd/" "gnome-clocks/" "makepkg-template/" "ffmpeg/" "ati/" "git-gui/" "jay/" "thumbnailers/" "apr-1/" "libgda-5.0/" "hwdata/" "desktop-directories/" "git-core/" "evince/" "httpd/" "djvu/" "ca-certificates/" "slsh/" "locale/" "gst-plugins-base/" "virtualbox/" "kbd/" "pavucontrol/" "sgml/" "mesa-demos/" "man/" "gtk-2.0/" "subversion/" "keyutils/" "factory/" "dbus-1/" "ppd/" "bison/" "vte/" "appdata/" "gnome-vpn-properties/" "perl5/" "gconf/" "libquvi-scripts/" "applications/" "tomcat8/" "gitk/" "x2go/" "doc/" "mono-2.0/" "zeitgeist/" "source-highlight/" "texmf/" "adium/" "brasero/" "iana-etc/" "gcc-6.3.1/" "gitweb/" "xosd/" "blueman/" "emesene/" "p11-kit/" "qt4/" "qemu/" "tc/" "x2goclient/" "gnome-color-manager/" "brltty/" "mimelnk/" "cups/" "pacman/" "mime/" "GConf/" "autogen/" "klavaro/" "file/" "gnome-tweak-tool/" "GeoIP/" "aclocal-1.15/" "colord/" "libreoffice/" "aclocal/" "../" "./")
+
+ ("/usr/" (22688 45384 906919 238000) "share/" "bin/" "lib32/" "../" "lib/" "src/" "./" "local/" "lib64/" "include/" "sbin/")
+
+ ("/home/robi/Документы/" (22686 6555 203390 884000) "SevumyanRT_resume.pdf" "SevumyanRT_resume.docx" "CV 2.doc" "../" "CV 2.docx" "работа/" "CV 2.odt" "учеба/" "БЛАНК заявл.МАТ.ПОМОЩЬ БЛАНК с подписями.doc" "rezyume.doc" "./")
+
+ ("/home/robi/Документы/учеба/Архив/" (22686 7507 620032 369000) "УИР.tar.gz" "Магистратура_1_семестр.tar.gz" "Поступление_в_магистратуру.tar.gz" "Отчеты_по_практикам.tar.gz" "8_семестр.tar.gz" "../" "7_семестр.tar.gz" "МатСтат.tar.gz" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/interfaces/" (22680 56413 35428 600000) "gui/" "../" "ConsoleInterface.java" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/" (22678 31100 942707 157000) "service/" "../" "model/" "core/" "./" "interfaces/")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/" (22678 30633 406042 691000) "../" "nir/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/" (22678 30633 402709 358000) "../" "sevumyan/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/" (22678 30633 399376 24000) "../" "m16502/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/" (22678 30633 396042 691000) "../" "kaf12/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/ru/" (22678 30633 392709 358000) "../" "mephi/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/java/" (22678 31100 942707 157000) "../" "ru/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/main/" (22678 5924 112825 659000) "../" "java/" "resources/" "./")
+
+ ("/home/robi/workspace/NIR/nir/src/" (22678 5924 112825 659000) "../" "main/" "./")
+
+ ("/home/robi/workspace/NIR/" (22678 10126 542805 880000) "../" "nir/" "./")
+
+ ("/home/robi/workspace/" (22678 4222 796167 1000) "LogManager2/" "MephiLabs/" "FlexibleLog/" "CSharp/" "NIR/" "CLabs/" "Builds/" ".metadata/" "daemonJAR/" "../" "Client/" "CLion/" "Servers/" "RemoteSystemsTempFiles/" "Python/" "Rewriter/" "internetapp/" "WebSphereClient/" "./" "cleanWebLog/" ".recommenders/")
+
+ ("/home/robi/workspace/CLion/Task5/" (22621 31338 360005 51000) "../" "Client/" "Server/" "./" "ServerReborn/")
+
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/Моделирование/" (22654 29966 307605 28000) "Laboratornaya_rabota_mat_modeli.docx" "Лабараторная_1~" "Лабараторная_1_график.ods" "Лабараторная_1" "Voprosy_k_testam_2016.docx" "#Лабараторная_1#" "Лабараторная_1.ods" "Лабараторная_1_документ.odt" "Отчет_1.odt" "Book1.xlsx" "Sevumyan_22.odt" "Lab3_raschety.ods" "Отчет_1.pdf" "Lections/" "../" "Lab_3-4.pdf" "Пособие исследование операций-2009-03-20.pdf" "Lab_3-4.odt" "Сети-Петри_МЛ_водзнаки.pdf" "Examples/" "Lab_3-4.docx" "gpss.zip" "Sevumyan_22.doc" "Лабараторная_1_1.ods" "Lab_5.odt" "./" "Lab_3.odt" "Lab_5.pdf")
+
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/Моделирование/Examples/" (22628 9662 672200 271000) "simple_pr.gps" "../" "Laba_5.rtf" "Microsoft_PowerPoint_Presentation.pptx" "gpss lab 3.docx" "gpss lab1-2.docx" "split_and_assemble.gps" "gpss lab 4.docx" "Referat_Baryshev_A_N_M16-502.docx" "./" "REFERAT.docx" "индивидуальное задание.docx" "6_pr.gps")
+
+ ("/home/robi/workspace/CLion/Task5/Server/" (22678 9442 986142 430000) "CMakeLists.txt" "bin/" ".gitignore~" "../" "Server" "main.c" ".git/" "conf.ini" ".idea/" "log" "./" ".gitignore")
+
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/АВС/" (22663 40226 65575 578000) "Tables.odt" "План_реферата~" "ABC_voprosy_K1-12M_osen_2016.pdf" "Referat_Sevumyan_RT_M16502.pdf" "Arkhitektura_ITOG.doc" "../" "Реферат.odt" "Задание.pdf" "План_реферата" "Пример_рефератов/" "Arkhitektura_ITOG.pdf" "Лекции/" "Задание.odt" "RudzitisReferat.docx" "pipeline.ppt" "ABC_voprosy_K1-12M_osen_2016.doc" "Presentation.odp" "./" "Presentation.ppt" "Presentation.pdf" "Архитектура ВС - ЛК 1-11.zip" "Текст реферата.odt" "#План_реферата#")
+
+ ("/home/robi/.m2/" (22678 6828 39488 72000) "settings.xml~" "../" "settings-security.xml" "settings.xml" "./" "repository/")
+
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/src/main/classpath/" (22620 59025 858587 780000) "../" "garm-domain-logins.properties" "log4j.properties" "garm-domain-divisions.properties" "./" "pampa.properties")
+
+ ("/home/robi/workspace/CLion/NIR_Project/resources/" (22675 29332 819998 753000) "streets.csv" "../" "streets.csv~" "./")
+
+ ("/home/robi/workspace/NIR/.git/" (22678 9934 572806 783000) "config" "branches/" "info/" "../" "HEAD" "description" "refs/" "./" "objects/" "hooks/")
+
+ ("/home/robi/workspace/CLion/NIR_Project/" (22675 26219 286659 238000) "CMakeLists.txt" "../" "src/" "resources/" ".idea/" "./")
+
+ ("/home/robi/workspace/CLion/" (22675 24821 539999 150000) "NIR_Project/" "Task5/" "../" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_1/src/" (22574 4384 112568 69000) "part1.c" "a.out" "../" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_1/" (22530 25940 826336 499000) ".cproject" "../" ".settings/" ".project" "Debug/" ".git/" "src/" "./" ".gitignore")
+
+ ("/usr/share/tomcat8/" (22577 36222 762637 370000) "webapps/" "bin/" "logs/" "../" "lib/" "work/" "conf/" "log/" "./" "temp/")
+
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/src/main/" (22618 11730 58074 422000) "../" "java/" "classpath/" "resources/" "./" "webapp/")
+
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/src/" (22618 11729 664741 78000) "../" "test/" "main/" "./")
+
+ ("/home/robi/Документы/работа/workspace/pampa/pampa-webapp/" (22620 56458 691988 990000) "pom.xml" "../" "pampa-webapp.iml" "src/" "./")
+
+ ("/home/robi/Документы/работа/workspace/pampa/" (22620 51972 762107 598000) ".svn/" "pom.xml" "pampa-webapp/" "pampa-dao-hibernate/" "pampa-test/" "pampa-dao/" "../" "pampa-model/" "pampa.iml" "pampa-parent/" "src/" ".idea/" "./" "svn-commit.tmp~")
+
+ ("/home/robi/Документы/работа/workspace/" (22618 11544 378068 785000) "../" "pampa/" "./")
+
+ ("/home/robi/Документы/работа/" (22618 13729 798135 140000) "workspace/" ".~lock.Техническое задание АСТРА.docx#" "../" "work/" "./")
+
+ ("/home/robi/.m2/repository/" (22620 51955 382108 57000) "classworlds/" "xmlpull/" "junit/" "org/" "javax/" "../" "commons-cli/" "com/" "commons-io/" "logdatabase/" "backport-util-concurrent/" "ru/" "commons-lang/" "xpp3/" ".locks/" "net/" "log4j/" "./" "joda-time/" "LogDatabase/" "io/" "jstl/" "commons-logging/" "WebLog/")
+
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/" (22605 30077 980020 339000) "Теория_Сигналов/" "../" "Курсовая/" "АВС/" "АОС/" "English/" "./" "Моделирование/")
+
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/English/" (22613 4428 570007 101000) "Academic_Vocabulary_in_use.pdf" "Baryshev_titul.pdf" "New_Headway_Academic_Skills_3_SB.pdf" "Annotation.pdf" "English_homework_3" "../" "Baryshev_titul.odt" "ghgh.docx" "Annotation.odt" "Англ_ДЗ_2.odt" "Insight_into_the_structure.pdf" "ghgh.pdf" "./" "English_Homework_2.pdf")
+
+ ("/home/robi/workspace/CLabs/Tasks/" (22576 14739 368546 117000) "lab5" "lab3" "../" "lab2" "lab4" "#lab3#" "lab1~" "./" "lab1")
+
+ ("/home/robi/builds/" (22576 19376 838686 923000) "skype/" "PackagesFromAUR_NEW" "gnome-shell-system-monitor-applet-git/" "glxosd/" "menulibre/" "../" "udftools/" "PackagesFromAUR_NEW~" "PackagesFromAUR" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_4/src/" (22576 27398 538617 506000) "../" "part2_4.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_3/Part3_3/src/" (22554 22074 493057 842000) "part3_3.c" "../" "./")
+
+ ("/home/robi/workspace/CLabs/Task_3/Part3_3/" (22554 22096 386390 596000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_3/" (22574 29652 226682 401000) "Part3_5/" "Part3_1/" "Part3_3/" "../" "Part3_9/" "Part3_2/" "Part3_10/" "Part3_7/" "Part3_4/" "./" "Part3_6/" "Part3_11/" "Part3_8/" "Task_3.tar.gz")
+
+ ("/home/robi/workspace/CLabs/RemoteSystemsTempFiles/" (22603 17411 862622 706000) "../" ".project" "./")
+
+ ("/home/robi/workspace/CLabs/" (22603 17411 862622 706000) "Tasks/" ".metadata/" "Task_3/" "Task1/" "Task_2/" "../" "RemoteSystemsTempFiles/" "Task_4/" "Task_1/" "./" "Task_3.tar.gz")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_11/src/" (22548 36244 250112 652000) "part2_11.c" "../" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_11/" (22548 36653 43458 397000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_10/src/" (22548 34106 143381 68000) "../" "part2_10.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_10/" (22548 34128 533381 748000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_9/src/" (22531 32015 28510 759000) "../" "part2_9.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_9/" (22531 32202 608516 454000) "Files/" ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_8/src/" (22531 31714 508501 635000) "../" "part2_8.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_8/" (22531 24709 714955 619000) "Files/" ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_7/src/" (22531 24018 431601 296000) "../" "part2_7.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_7/" (22531 24294 98276 333000) "Files/" ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_4/" (22530 46069 363614 317000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/" (22557 44600 69995 979000) "Part2_10/" "Part2_4/" "Part2_5/" "../" "Part2_2/" "Part2_11/" "Part2_6/" "Part2_3/" "Part2_8/" ".project" "Part2_1/" "Part2_7/" "./" "Part2_9/")
+
+ ("/home/robi/\320\224\320\276\320\272\321\203\320\274\320\265\320\275\321\202\321\213/\321\203\321\207\320\265\320\261\320\260/\320\234\320\260\320\263\320\270\321\201\321\202\321\200\320\260\321\202\321\203\321\200\320\260_1_\321\201\320\265\320\274\320\265\321\201\321\202\321\200/\320\220\320\222\320\241/" (22564 50917 63442 367000) "ÐÐ»Ð°Ð½_ÑÐµÑÐµÑÐ°ÑÐ°~" "../" "Ð ÐµÑÐµÑÐ°Ñ.odt" "ÐÐ»Ð°Ð½_ÑÐµÑÐµÑÐ°ÑÐ°" "ÐÑÐ¸Ð¼ÐµÑ_ÑÐµÑÐµÑÐ°ÑÐ¾Ð²/" "./" "#ÐÐ»Ð°Ð½_ÑÐµÑÐµÑÐ°ÑÐ°#")
+
+ ("/home/robi/Документы/учеба/Магистратура_1_семестр/АВС/Пример_рефератов/" (22548 32600 176668 676000) "Roadrunner.docx" "../" "Aliev-Arkhitektura_servera_SPARC_M6-32_na_baze_protsessora_SPARC_M6-1.docx" "./" "Roadrunner.pptx")
+
+ ("/home/robi/.designer/" (21810 54161 469665 896000) "templates/" "../" "./" "gradients.xml")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_7/src/" (22539 32826 593275 822000) "a.out" "../" "f1" "part7.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_8/src/" (22539 31775 219947 437000) "a.out" "part8.c" "../" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_9/" (22530 19483 362807 101000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_9/src/" (22539 64266 733256 29000) "nano.save" "a.out" "../" "f1" "part9.c" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_6/File/" (22539 27643 586633 551000) "test.1" "../" "test" "./")
+
+ ("/home/" (22240 37752 931124 696000) "../" "robi/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_2/Part2_8/Files/" (22531 51305 289937 989000) "../" "pacman.log" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_8/" (22530 39273 396741 308000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_7/" (22530 9226 392900 406000) ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_6/src/" (22530 19093 269461 923000) "part6.c" "../" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part1_6/" (22530 8267 749537 966000) "File/" ".cproject" "../" ".settings/" ".project" "Debug/" "src/" "./")
+
+ ("/home/robi/workspace/CLabs/Task_1/" (22530 40005 920096 882000) "Part1_1/" "Part1_9/" ".cproject" "Part1_2/" "../" "Part1_7/" "Part1_4/" ".settings/" ".project" "Part1_6/" "Part1_10/" "./" "Part1_11/" "Part1_8/")
+
+ ("/home/robi/workspace/CLabs/Task_1/Part11/File/" (22530 34122 353251 577000) "#PKGBUILD2#" "../" "PKGBUILD" ".#PKGBUILD2" "PKGBUILD2" "./")
+
+ ("/home/robi/workspace/Python/" (22485 42340 177692 618000) "First_Project/" "NumPy.py" "../" "NumPy.py~" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
