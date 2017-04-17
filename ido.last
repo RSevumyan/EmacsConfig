@@ -57,15 +57,16 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/robi/"
+ "/home/robi/.emacs.d/"
+ "/home/robi/workspace/NIR/nir/"
  "/home/robi/qemu/share/"
+ "/home/robi/"
  "/home/robi/.emacs.d/lisp/"
  "/home/robi/Документы/учеба/IT_learning_books/"
  "/home/robi/qemu/"
  "/usr/share/qemu/keymaps/"
  "/etc/"
  "/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/interfaces/gui/"
- "/home/robi/workspace/NIR/nir/"
  "/home/robi/workspace/NIR/"
  "/home/robi/workspace/CLion/Task5/Server/"
  "/home/robi/workspace/CLion/NIR_Project/resources/"
@@ -101,33 +102,37 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".gitignore"
+ "session.10b4b1f04311137ba149047411539678700000022850055"
+ "init.el"
+ "note.txt"
+ ".bashrc"
+ ".basrc~"
  ".bashrc_old"
  ".basrc"
- ".bashrc"
  ".emacs"
  "note"
- "multi-term.el"
- "qemu-start.sh"
- "coordinates.txt"
- "pipe.txt"
- ".bash_history"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/robi/" (22771 29804 441012 287000) ".esd_auth" ".Xmodmap" "workspace/" ".pulse-cookie" ".ssh/" "Шаблоны/" ".mono/" ".bashrc_old" ".gnome/" ".ipython/" ".mozilla/" "builds/" ".mplayer/" ".wine/" ".ssr/" ".CLion2016.2/" ".x2go/" ".emacs" ".ICEauthority" ".macromedia/" "Общедоступные/" ".lesshst" "Документы/" "Видео/" ".java/" ".emacs.d/" "Загрузки/" ".tooling/" ".local/" ".gnome2_private/" "../" ".x2goclient/" ".dir_colors~" ".gnome2/" ".gitconfig.backup" ".cache/" ".Skype/" ".IntelliJIdea2016.3/" ".gnupg/" "Изображения/" ".dir_colors" "Рабочий стол/" ".adobe/" ".fonts/" ".steampid" ".bash_logout" ".steam/" ".pki/" ".designer/" ".thunderbird/" ".config/" ".basrc" ".putty/" "m2/" ".conky/" "Музыка/" ".tomcat/" ".m2/" ".recently-used" ".gitconfig" ".bash_profile" "./" ".emacs~" "Заметки~" ".bash_history" ".basrc~" ".steampath" ".dia/" "qemu/" ".swt/" ".eclipse/" ".subversion/")
+ ("/home/robi/.emacs.d/" (22773 5471 610919 815000) "session.10b4b1f04311137ba149047411539678700000022850055" "init.el~" "elpa/" "../" "init.el" "ido.last~" ".git/" "auto-save-list/" ".python-environments/" "./" "ido.last" "lisp/" ".gitignore")
+
+ ("/etc/" (22771 34316 157815 940000) "DIR_COLORS" "brltty.conf" "lirc/" "profile" "gshadow.pacnew" "makepkg.conf" "sudoers.d/" "locale.gen" "gdm/" "ssl/" "man_db.conf" "request-key.conf" "samba/" "sound/" "issue" "sysctl.d/" "logcheck/" "tomcat7/" "vde2/" "fuse.conf" "avahi/" "iproute2/" "vbox/" "libao.conf" "gshadow-" "hosts" "logrotate.d/" "gtk-3.0/" "request-key.d/" "rsyncd.conf" "asound.conf" "localtime" "mdadm.conf" ".pwd.lock" "hadoop/" "vpnc/" "udev/" "vconsole.conf" "shadow.pacnew" "ts.conf" "nxagent/" "crypttab" "default/" "geoclue/" "systemd/" "krb5.conf" ".updated" "rc_maps.cfg" "ld.so.cache" "ipsec.secrets" "arch-release" "iptables/" "elasticsearch/" "securetty" "gai.conf" "profile.d/" "gemrc" "mail.rc" "wpa_supplicant/" "mplayer/" "libpaper.d/" "cifs-utils/" "gshadow" "xml/" "java-8-openjdk/" "irman.conf" "../" "nsswitch.conf" "ppp/" "gnome-vfs-mime-magic" "X11/" "openldap/" "sensors.d/" "machine-id" "trusted-key.key" "gnome-vfs-2.0/" "vimrc" "modules-load.d/" "apache-ant/" "pango/" "machine-info" "grub.d/" "sensors3.conf" "login.defs" "fstab" "rpc" "conf.d/" "initcpio/" "locale.conf" "security/" "drirc" "group.pacnew" "slsh.rc" "netctl/" "protocols" "pacman.conf" "lvm/" "group" "papersize" "ystemctl stop openswan" "ImageMagick-6/" "solr/" "nscd.conf" "fonts/" "hostname" "passwd.pacnew" "locale.gen.pacnew" "motd" "ld.so.conf" "brlapi.key" "ethertypes" "kernel/" "services" "java-7-openjdk/" "resolv.conf.bak" "mime.types" "polkit-1/" "rc_keymaps/" "mkinitcpio.conf" "shadow-" "modprobe.d/" "ssh/" "passwd" "dhcpcd.duid" "dhcpcd.conf" "shells" "udisks2/" "hosts~" "vde/" "xl2tpd/" "mke2fs.conf" "tmpfiles.d/" "logrotate.conf" "libgda-5.0/" "mtab" "mono/" "ld.so.conf.d/" "vdpau_wrapper.cfg" "healthd.conf" "httpd/" "ca-certificates/" "skel/" "inputrc" "binfmt.d/" "group-" "sudoers" "sudoers.pacnew" "gtk-2.0/" "bash.bashrc" "depmod.d/" "dbus-1/" "bluetooth/" "shadow" "environment" "./" "printcap" "gconf/" "dkms/" "tomcat8/" "nanorc" "x2go/" "xinetd.d/" "texmf/" "adobe/" "pulse/" "netconfig" "passwd-" "resolv.conf" "mkinitcpio.d/" "pcmcia/" "NetworkManager/" "pam.d/" "bash.bash_logout" "pkcs11/" "bonobo-activation/" "libnl/" "cups/" "pacman.d/" "host.conf" "UPower/" "os-release" "libreoffice/" "xdg/")
+
+ ("/usr/share/qemu/keymaps/" (22727 47674 0 0) "fo" "fr-ch" "lv" "cz" "de-ch" "hr" "nl" "pt-br" "sv" "bepo" "es" "lt" "et" "../" "ar" "fr" "pl" "da" "it" "en-gb" "fr-be" "th" "ru" "mk" "pt" "fr-ca" "de" "ja" "tr" "sl" "no" "modifiers" "./" "nl-be" "hu" "is" "en-us" "common" "fi")
+
+ ("/home/robi/qemu/share/" (22773 5135 847576 288000) "#note.txt#" "Block_1.PNG" "Block_2.PNG" "../" "ILMerge.msi" "StreetViewerBin/" "#note#" "StreetViewerCode/" "note~" "note.txt" "note.txt~" "./" ".#note.txt")
+
+ ("/home/robi/" (22771 31774 117738 757000) ".esd_auth" ".Xmodmap" "workspace/" ".pulse-cookie" ".ssh/" "Шаблоны/" ".bashrc" ".mono/" ".bashrc_old" ".gnome/" ".ipython/" ".mozilla/" "builds/" ".mplayer/" ".wine/" ".ssr/" ".CLion2016.2/" ".x2go/" ".emacs" ".ICEauthority" ".macromedia/" "Общедоступные/" ".lesshst" "Документы/" ".bashrc~" "Видео/" ".java/" ".emacs.d/" "Загрузки/" ".tooling/" ".local/" ".gnome2_private/" "../" ".x2goclient/" ".dir_colors~" ".gnome2/" ".gitconfig.backup" ".cache/" ".Skype/" ".IntelliJIdea2016.3/" ".gnupg/" "Изображения/" ".dir_colors" "Рабочий стол/" ".adobe/" ".fonts/" ".steampid" ".bash_logout" ".steam/" ".pki/" ".designer/" ".thunderbird/" ".config/" ".putty/" "m2/" ".conky/" "Музыка/" ".tomcat/" ".m2/" ".recently-used" ".gitconfig" ".bash_profile" "./" ".emacs~" "Заметки~" ".bash_history" ".steampath" ".dia/" "qemu/" ".swt/" ".eclipse/" ".subversion/")
+
+ ("/home/robi/builds/" (22771 34193 134478 871000) "skype/" "PackagesFromAUR_NEW" "gnome-shell-system-monitor-applet-git/" "glxosd/" "menulibre/" "../" "udftools/" "PackagesFromAUR_NEW~" "PackagesFromAUR" "./")
 
  ("/usr/share/virtualbox/" (22771 27919 630363 131000) "VBoxSysInfo.sh" "../" "VBoxKernelModulesLoad.sh~" "VBoxCreateUSBNode.sh" "rdesktop-vrdp-keymaps/" "VBoxKernelModulesLoad.sh" "./" "nls/")
 
  ("/usr/share/tomcat8/conf/" (22771 27912 657029 586000) "tomcat-users.xml" "Catalina/" "catalina.properties" "catalina.policy" "logging.properties" "../" "server.xml" "tomcat-users.xsd" "tomcat-users.xml.pacnew" "web.xml" "./" "context.xml")
 
- ("/etc/" (22771 28802 423722 560000) "DIR_COLORS" "brltty.conf" "lirc/" "profile" "gshadow.pacnew" "makepkg.conf" "sudoers.d/" "locale.gen" "gdm/" "ssl/" "man_db.conf" "request-key.conf" "samba/" "sound/" "issue" "sysctl.d/" "logcheck/" "tomcat7/" "vde2/" "fuse.conf" "avahi/" "iproute2/" "vbox/" "libao.conf" "gshadow-" "hosts" "logrotate.d/" "gtk-3.0/" "request-key.d/" "rsyncd.conf" "asound.conf" "localtime" "mdadm.conf" ".pwd.lock" "hadoop/" "vpnc/" "udev/" "vconsole.conf" "shadow.pacnew" "ts.conf" "nxagent/" "crypttab" "default/" "geoclue/" "systemd/" "krb5.conf" ".updated" "rc_maps.cfg" "ld.so.cache" "ipsec.secrets" "arch-release" "iptables/" "elasticsearch/" "securetty" "gai.conf" "profile.d/" "gemrc" "mail.rc" "wpa_supplicant/" "mplayer/" "libpaper.d/" "cifs-utils/" "gshadow" "xml/" "java-8-openjdk/" "irman.conf" "../" "nsswitch.conf" "ppp/" "gnome-vfs-mime-magic" "X11/" "openldap/" "sensors.d/" "machine-id" "trusted-key.key" "gnome-vfs-2.0/" "vimrc" "modules-load.d/" "apache-ant/" "pango/" "machine-info" "grub.d/" "sensors3.conf" "login.defs" "fstab" "rpc" "conf.d/" "initcpio/" "locale.conf" "security/" "drirc" "group.pacnew" "slsh.rc" "netctl/" "protocols" "pacman.conf" "lvm/" "group" "papersize" "ystemctl stop openswan" "ImageMagick-6/" "solr/" "nscd.conf" "fonts/" "hostname" "passwd.pacnew" "locale.gen.pacnew" "motd" "ld.so.conf" "brlapi.key" "ethertypes" "kernel/" "services" "java-7-openjdk/" "resolv.conf.bak" "mime.types" "polkit-1/" "rc_keymaps/" "mkinitcpio.conf" "shadow-" "modprobe.d/" "ssh/" "passwd" "dhcpcd.duid" "dhcpcd.conf" "shells" "udisks2/" "hosts~" "vde/" "xl2tpd/" "mke2fs.conf" "tmpfiles.d/" "logrotate.conf" "libgda-5.0/" "mtab" "mono/" "ld.so.conf.d/" "vdpau_wrapper.cfg" "healthd.conf" "httpd/" "ca-certificates/" "skel/" "inputrc" "binfmt.d/" "group-" "sudoers" "sudoers.pacnew" "gtk-2.0/" "bash.bashrc" "depmod.d/" "dbus-1/" "bluetooth/" "shadow" "environment" "./" "printcap" "gconf/" "dkms/" "tomcat8/" "nanorc" "x2go/" "xinetd.d/" "texmf/" "adobe/" "pulse/" "netconfig" "passwd-" "resolv.conf" "mkinitcpio.d/" "pcmcia/" "NetworkManager/" "pam.d/" "bash.bash_logout" "pkcs11/" "bonobo-activation/" "libnl/" "cups/" "pacman.d/" "host.conf" "UPower/" "os-release" "libreoffice/" "xdg/")
-
  ("/home/robi/.emacs.d/lisp/" (22742 51307 295908 813000) "multi-term.el" "out.ogv" "../" "multi-term.el~" "./")
-
- ("/home/robi/qemu/share/" (22763 55841 25292 228000) "../" "ILMerge.msi" "StreetViewerBin/" "#note#" "StreetViewerCode/" "note~" "note.txt" "./")
-
- ("/home/robi/.emacs.d/" (22762 49523 253110 571000) "session.10b4b1f04311137ba149047411539678700000022850055" "elpa/" "../" "ido.last~" "auto-save-list/" ".python-environments/" "./" "ido.last" "lisp/")
 
  ("/home/robi/Документы/учеба/IT_learning_books/" (22472 22371 951997 601000) "../" "Python/" "./")
 
@@ -144,8 +149,6 @@
  ("/home/robi/workspace/NIR/nir/src/main/java/ru/mephi/kaf12/m16502/sevumyan/nir/interfaces/gui/" (22680 63820 178986 832000) "GUIInterface.java" "../" "GUIInterface.form" "./")
 
  ("/home/robi/Загрузки/" (22692 50705 629847 465000) "torrents/" "clion-2016.2.2/" "h2/" "../" "GoogleMapsApiClient-master.zip" "Rob.rar" "settings.jar" "Win7.SP1.x86-x64.Rus-Eng.18in1.IE11+.Activated.v4/" "SWUpdate_2.2.8.32.ZIP" "./")
-
- ("/usr/share/qemu/keymaps/" (22617 42733 0 0) "fo" "fr-ch" "lv" "cz" "de-ch" "hr" "nl" "pt-br" "sv" "bepo" "es" "lt" "et" "../" "ar" "fr" "pl" "da" "it" "en-gb" "fr-be" "th" "ru" "mk" "pt" "fr-ca" "de" "ja" "tr" "sl" "no" "modifiers" "./" "nl-be" "hu" "is" "en-us" "common" "fi")
 
  ("/usr/share/qemu/" (22686 3974 180125 794000) "vgabios-isavga.bin" "bios-coreboot.bin" "pxe-e1000.rom" "vgabios-cirrus.bin" "efi-rtl8139.rom" "qemu-icon.bmp" "linuxboot_dma.bin" "linuxboot.bin" "trace-events-all" "efi-e1000e.rom" "efi-e1000.rom" "vgabios-qxl.bin" "pxe-rtl8139.rom" "pxe-pcnet.rom" "vgabios-stdvga.bin" "../" "multiboot.bin" "bios.bin" "kvmvapic.bin" "bios-csm.bin" "efi-virtio.rom" "pxe-eepro100.rom" "efi-vmxnet3.rom" "efi-eepro100.rom" "bios-256k.bin" "efi-ne2k_pci.rom" "qemu_logo_no_text.svg" "keymaps/" "vgabios-virtio.bin" "vgabios.bin" "./" "efi-pcnet.rom" "pxe-ne2k_pci.rom" "vgabios-vmware.bin" "pxe-virtio.rom" "sgabios.bin")
 
@@ -228,8 +231,6 @@
  ("/home/robi/Документы/учеба/Магистратура_1_семестр/English/" (22613 4428 570007 101000) "Academic_Vocabulary_in_use.pdf" "Baryshev_titul.pdf" "New_Headway_Academic_Skills_3_SB.pdf" "Annotation.pdf" "English_homework_3" "../" "Baryshev_titul.odt" "ghgh.docx" "Annotation.odt" "Англ_ДЗ_2.odt" "Insight_into_the_structure.pdf" "ghgh.pdf" "./" "English_Homework_2.pdf")
 
  ("/home/robi/workspace/CLabs/Tasks/" (22576 14739 368546 117000) "lab5" "lab3" "../" "lab2" "lab4" "#lab3#" "lab1~" "./" "lab1")
-
- ("/home/robi/builds/" (22576 19376 838686 923000) "skype/" "PackagesFromAUR_NEW" "gnome-shell-system-monitor-applet-git/" "glxosd/" "menulibre/" "../" "udftools/" "PackagesFromAUR_NEW~" "PackagesFromAUR" "./")
 
  ("/home/robi/workspace/CLabs/Task_2/Part2_4/src/" (22576 27398 538617 506000) "../" "part2_4.c" "./")
 
