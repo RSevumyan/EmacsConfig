@@ -50,9 +50,6 @@
  (eval `(define-key key-translation-map (kbd ,(concat "C-" (string from))) (kbd ,(concat     "C-" (string to)))))
  (eval `(define-key key-translation-map (kbd ,(concat "M-" (string from))) (kbd ,(concat     "M-" (string to))))))
 
-(global-git-commit-mode)
-
-
 (global-linum-mode)
 
 (add-to-list 'auto-mode-alist
@@ -81,3 +78,4 @@
 
 (global-set-key (kbd "C-x C-l") 'remove-newlines-in-region)
 
+(global-set-key (kbd "C-c C-r") 'revert-buffer)
