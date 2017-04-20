@@ -54,8 +54,6 @@
 
 (global-linum-mode)
 
-(global-set-key (kbd "C-x C-l") 'remove-newlines-in-region)
-
 (global-set-key (kbd "C-c C-r") 'revert-buffer)
 
 (set-background-color "#fffaf0")

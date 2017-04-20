@@ -16,10 +16,21 @@
 
 (global-set-key [C-return] 'completion-at-point)
 
-(defun remove-newlines-in-region ()
-  "Removes all newlines in the region."
+(defun linarize-xml()
   (interactive)
-  (save-restriction
-    (narrow-to-region (point) (mark))
-    (goto-char (point-min))
-    (while (or (search-forward "\n" nil t)) (replace-match "" nil t))))
+  (goto-char (point-min))
+  (while (re-search-forward "\>[ \t\n\r\f\v]+\<" nil t)
+    (replace-match "\>\<")))
+
+(global-set-key (kbd "C-M-L") 'linarize-xml)
+
+(defun reformat-xml (begin end)
+  (interactive "r")
+  (save-excursion
+    (nxml-mode)
+    (goto-char begin)
+    (while (search-forward-regexp "\>[[:blank:]]*\<" nil t) 
+      (backward-char) (insert "\n") (setq end (1+ end)))
+    (indent-region begin end)))
+
+(global-set-key (kbd "C-M-B") 'reformat-xml)
