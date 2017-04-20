@@ -22,7 +22,7 @@
   (while (re-search-forward "\>[ \t\n\r\f\v]+\<" nil t)
     (replace-match "\>\<")))
 
-(global-set-key (kbd "C-M-L") 'linarize-xml)
+(global-set-key (kbd "C-M-l") 'linarize-xml)
 
 (defun reformat-xml (begin end)
   (interactive "r")
@@ -33,4 +33,4 @@
       (backward-char) (insert "\n") (setq end (1+ end)))
     (indent-region begin end)))
 
-(global-set-key (kbd "C-M-B") 'reformat-xml)
+(global-set-key (kbd "C-M-b") 'reformat-xml)
