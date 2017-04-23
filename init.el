@@ -1,4 +1,3 @@
-
 (package-initialize)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -18,16 +17,15 @@
 			 ("org" . "http://orgmode.org/elpa/")
 			 ))
 
-
 (require 'ido)
+
+(ido-mode t)
 
 (require 'multi-term)
 
-(require 'xml-tools)
-
 (setq multi-term-program "/bin/bash")
 
-(ido-mode t)
+(require 'xml-tools)
 
 (add-hook 'json-mode-hook #'flycheck-mode)
 
@@ -69,3 +67,5 @@
      (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
 
 (toggle-fullscreen)
+
+(require 'sr-speedbar)
