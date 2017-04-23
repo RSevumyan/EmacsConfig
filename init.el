@@ -60,3 +60,12 @@
 (global-set-key (kbd "C-c C-r") 'revert-buffer)
 
 (set-background-color "#fffaf0")
+
+(defun toggle-fullscreen ()
+  (interactive)
+  (when (eq window-system 'x)
+    (set-frame-parameter
+     nil 'fullscreen
+     (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
+
+(toggle-fullscreen)
