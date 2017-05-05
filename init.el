@@ -1,21 +1,22 @@
-(package-initialize)
-
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-
-(load "package")
 
 (require 'package)
 
 (setq package-archives '(
 			 ("elpy" . "http://jorgenschaefer.github.io/packages/")
 			 ("gnu" . "http://elpa.gnu.org/packages/")
-			 ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")                         
-			 ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")
+			 ("melpa-stable" . "https://stable.melpa.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")
 			 ))
+
+(package-initialize)
+
+(unless (package-installed-p 'json-mode)
+  (package-refresh-contents)
+  (package-install 'json-mode))
 
 (require 'ido)
 
@@ -40,7 +41,7 @@
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
  '(custom-enabled-themes nil)
- '(package-selected-packages (quote (json-mode)))
+ '(package-selected-packages (quote (magit json-mode)))
  '(speedbar-directory-unshown-regexp "\"^\\\\(\\\\..*\\\\)\\\\'\"")
  '(speedbar-show-unknown-files t)
  '(sr-speedbar-default-width 20)
