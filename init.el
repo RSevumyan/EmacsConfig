@@ -14,10 +14,6 @@
 
 (package-initialize)
 
-(unless (package-installed-p 'json-mode)
-  (package-refresh-contents)
-  (package-install 'json-mode))
-
 (require 'ido)
 
 (ido-mode t)
@@ -28,33 +24,12 @@
 
 (require 'xml-tools)
 
+(require 'sr-speedbar)
+
+(sr-speedbar-open)
+
+
 (add-hook 'json-mode-hook #'flycheck-mode)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
- '(column-number-mode t)
- '(custom-enabled-themes nil)
- '(package-selected-packages (quote (magit json-mode)))
- '(speedbar-directory-unshown-regexp "\"^\\\\(\\\\..*\\\\)\\\\'\"")
- '(speedbar-show-unknown-files t)
- '(sr-speedbar-default-width 20)
- '(sr-speedbar-max-width 20)
- '(tool-bar-mode nil)
- '(tooltip-mode nil))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 (put 'upcase-region 'disabled nil)
 
@@ -82,8 +57,45 @@
 
 (toggle-fullscreen)
 
-(require 'sr-speedbar)
+;;==============================================================================================================================================================
+;;=============================================================Package initialization===========================================================================
+;;==============================================================================================================================================================
 
-(sr-speedbar-open)
+(unless (package-installed-p 'json-mode)
+  (package-refresh-contents)
+  (package-install 'json-mode))
+
+(unless (package-installed-p 'image+)
+  (package-refresh-contents)
+  (package-install 'json-mode))
+
+;;==============================================================================================================================================================
+;;====================================================================Custom set================================================================================
+;;==============================================================================================================================================================
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+ '(column-number-mode t)
+ '(custom-enabled-themes nil)
+ '(package-selected-packages (quote (image+ magit json-mode)))
+ '(speedbar-directory-unshown-regexp "\"^\\\\(\\\\..*\\\\)\\\\'\"")
+ '(speedbar-show-unknown-files t)
+l '(sr-speedbar-default-width 20)
+ '(sr-speedbar-max-width 20)
+ '(tool-bar-mode nil)
+ '(tooltip-mode nil))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

@@ -3,4 +3,6 @@ session.*
 .gitmessage
 ido.last
 \#*\#
+\.\#*\#
 /elpa/*
+/url/*
