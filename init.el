@@ -83,7 +83,6 @@
 ;;====================================================================Custom settings===========================================================================
 ;;==============================================================================================================================================================
 
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -101,7 +100,7 @@
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
 
-;;Dired mode cusomization
+;;Dired mode customization
 (put 'dired-find-alternate-file 'disabled nil)
 (eval-after-load 'dired '(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 (eval-after-load 'dired '(define-key dired-mode-map (kbd "a") 'dired-find-file))
