@@ -22,13 +22,15 @@
 
 (require 'multi-term)
 
-(require 'common)
-
 (setq multi-term-program "/bin/bash")
+
+(require 'common)
 
 (require 'xml-tools)
 
 (require 'sr-speedbar)
+
+(require 'multi-scratch)
 
 (add-hook 'json-mode-hook #'flycheck-mode)
 
@@ -56,6 +58,7 @@
 (global-set-key (kbd "M-a") 'beginning-of-buffer)
 (global-set-key (kbd "M-e") 'end-of-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-c C-s") 'multi-scratch-new)
 
 (set-background-color "#fffaf0")
 (set-face-attribute 'region nil :background "#FFB72F")
@@ -64,6 +67,27 @@
 
 (tool-bar-mode -1)
 (menu-bar-mode -1) 
+
+(add-hook 'ibuffer-mode-hook (lambda () (ibuffer-auto-mode 1)))
+(add-hook 'term-mode-hook (lambda () (linum-mode -1)))
+
+;;ibuffer
+(setq ibuffer-saved-filter-groups
+      (quote (("Def"
+	       ("Terminal" (mode . term-mode))
+	       ("Dired" (mode . dired-mode))
+	       ("Scratch" (or (name . "^\\*multi-scratch<[0-9]+>\\*$") (name . "^\\*scratch\\*$")))
+	       ("Help" (or (name . "\*Help\*")
+			   (name . "\*Apropos\*")
+			   (name . "\*info\*")
+			   (name . "\*Directory\*")
+			   (name . "\*Completions\*")))
+	       ("Emacs" (or (name . "^\\*Messages\\*$") (name . "^\\*GNU Emacs\\*$")))
+	       ))))
+
+  (add-hook 'ibuffer-mode-hook
+              (lambda ()
+                (ibuffer-switch-to-saved-filter-groups "Def")))
 
 ;;==============================================================================================================================================================
 ;;=============================================================Package initialization===========================================================================
