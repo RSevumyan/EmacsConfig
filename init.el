@@ -32,8 +32,6 @@
 
 (require 'multi-scratch)
 
-(add-hook 'json-mode-hook #'flycheck-mode)
-
 (put 'upcase-region 'disabled nil)
 
 (loop
@@ -68,7 +66,8 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1) 
 
-(add-hook 'ibuffer-mode-hook (lambda () (ibuffer-auto-mode 1)))
+(add-hook 'json-mode-hook #'flycheck-mode)
+
 (add-hook 'term-mode-hook (lambda () (linum-mode -1)))
 
 ;;ibuffer
@@ -85,9 +84,10 @@
 	       ("Emacs" (or (name . "^\\*Messages\\*$") (name . "^\\*GNU Emacs\\*$")))
 	       ))))
 
-  (add-hook 'ibuffer-mode-hook
-              (lambda ()
-                (ibuffer-switch-to-saved-filter-groups "Def")))
+(add-hook 'ibuffer-mode-hook
+          (lambda ()
+	    (ibuffer-auto-mode 1)
+            (ibuffer-switch-to-saved-filter-groups "Def")))
 
 ;;==============================================================================================================================================================
 ;;=============================================================Package initialization===========================================================================
