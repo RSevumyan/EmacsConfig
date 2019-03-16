@@ -6,9 +6,6 @@
   (set-frame-parameter nil 'fullscreen 'fullboth)
   )
 
-(frame-parameter nil 'fullscreen)
-
-
 ;;Function for move 10 lines forward
 (defun goto-tenlines-forward ()
   (interactive)
