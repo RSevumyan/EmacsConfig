@@ -1,6 +1,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "/usr/share/emacs/site-lisp")
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
@@ -32,6 +33,8 @@
 
 (require 'multi-scratch)
 
+(require 'lilypond-mode)
+
 (put 'upcase-region 'disabled nil)
 
 (loop
@@ -43,7 +46,6 @@
  (eval `(define-key key-translation-map (kbd ,(concat "С-M-" (string from))) (kbd ,(concat    "C-M-" (string to)))))
  )
 
-(global-linum-mode)
 
 (global-set-key (kbd "C-c C-r") 'revert-buffer)
 (global-set-key (kbd "C-c C-r") 'revert-buffer)
@@ -57,6 +59,14 @@
 (global-set-key (kbd "M-e") 'end-of-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c C-s") 'multi-scratch-new)
+(global-set-key (kbd "C-c C-t") 'multi-term)
+(global-set-key (kbd "M-<left>") 'backward-sexp)
+(global-set-key (kbd "M-<right>") 'forward-sexp)
+;;Window size
+(global-set-key (kbd "S-C-<right>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<left>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 (set-background-color "#fffaf0")
 (set-face-attribute 'region nil :background "#FFB72F")
@@ -66,28 +76,39 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1) 
 
-(add-hook 'json-mode-hook #'flycheck-mode)
+(add-hook 'prog-mode-hook 'linum-mode)
+
+(add-hook 'json-mode-hook 'flycheck-mode)
 
 (add-hook 'term-mode-hook (lambda () (linum-mode -1)))
+
+(setq auto-mode-alist
+      (cons '("\\.ly$" . LilyPond-mode) auto-mode-alist))
 
 ;;ibuffer
 (setq ibuffer-saved-filter-groups
       (quote (("Def"
 	       ("Terminal" (mode . term-mode))
 	       ("Dired" (mode . dired-mode))
-	       ("Scratch" (or (name . "^\\*multi-scratch<[0-9]+>\\*$") (name . "^\\*scratch\\*$")))
+	       ("Scratch" (or (name . "^\\*multi-scratch<[0-9]+>\\*$") (name . "^\\*scratch\\*$") (name . "^scratch_.*$")))
 	       ("Help" (or (name . "\*Help\*")
 			   (name . "\*Apropos\*")
 			   (name . "\*info\*")
 			   (name . "\*Directory\*")
 			   (name . "\*Completions\*")))
-	       ("Emacs" (or (name . "^\\*Messages\\*$") (name . "^\\*GNU Emacs\\*$")))
+	       ("Emacs" (or (name . "^\\*Messages\\*$") (name . "^\\*GNU Emacs\\*$") (name . "^\\*Backtrace\\*$")))
 	       ))))
 
 (add-hook 'ibuffer-mode-hook
           (lambda ()
 	    (ibuffer-auto-mode 1)
-            (ibuffer-switch-to-saved-filter-groups "Def")))
+            (ibuffer-switch-to-saved-filter-groups "Def")
+	    (linum-mode -1)))
+
+
+(setq visible1-bell t)
+
+(setq ring-bell-function 'ignore)
 
 ;;==============================================================================================================================================================
 ;;=============================================================Package initialization===========================================================================
@@ -122,7 +143,7 @@
  '(custom-enabled-themes nil)
  '(package-selected-packages
    (quote
-    (markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
+    (logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.rambler.ru")
  '(smtpmail-smtp-service 25)

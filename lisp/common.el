@@ -3,10 +3,11 @@
 ;;Function for emacs frame maximization
 (defun toggle-fullscreen ()
   (interactive)
-  (when (eq window-system 'x)
-    (set-frame-parameter
-     nil 'fullscreen
-     (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
+  (set-frame-parameter nil 'fullscreen 'fullboth)
+  )
+
+(frame-parameter nil 'fullscreen)
+
 
 ;;Function for move 10 lines forward
 (defun goto-tenlines-forward ()
@@ -32,10 +33,3 @@
   (interactive)
   ;;Not implemented yet
   )
-
-(defun toggle-fullscreen ()
-  (interactive)
-  (when (eq window-system 'x)
-    (set-frame-parameter
-     nil 'fullscreen
-     (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
