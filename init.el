@@ -1,3 +1,5 @@
+
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
@@ -70,6 +72,7 @@
 
 (set-background-color "#fffaf0")
 (set-face-attribute 'region nil :background "#FFB72F")
+(set-face-attribute 'default nil :height 110)
 
 (toggle-fullscreen)
 
@@ -90,7 +93,7 @@
       (quote (("Def"
 	       ("Terminal" (mode . term-mode))
 	       ("Dired" (mode . dired-mode))
-	       ("Scratch" (or (name . "^\\*multi-scratch<[0-9]+>\\*$") (name . "^\\*scratch\\*$") (name . "^scratch_.*$")))
+	       ("Scratch" (name . ".*scratch.*") )
 	       ("Help" (or (name . "\*Help\*")
 			   (name . "\*Apropos\*")
 			   (name . "\*info\*")
@@ -118,9 +121,9 @@
   (package-refresh-contents)
   (package-install 'json-mode))
 
-(unless (package-installed-p 'image+)
+(unless (package-installed-p 'multi-term)
   (package-refresh-contents)
-  (package-install 'image+))
+  (package-install 'multi-term))
 
 (unless (package-installed-p 'vlf)
   (package-refresh-contents)
@@ -135,7 +138,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
+ '(ansi-color-facesector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
@@ -143,7 +146,7 @@
  '(custom-enabled-themes nil)
  '(package-selected-packages
    (quote
-    (logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
+    (multi-term logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.rambler.ru")
  '(smtpmail-smtp-service 25)
