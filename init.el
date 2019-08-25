@@ -1,10 +1,7 @@
-
-
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "/usr/share/emacs/site-lisp")
-
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (require 'package)
@@ -35,7 +32,7 @@
 
 (require 'multi-scratch)
 
-(require 'lilypond-mode)
+;;(require 'lilypond-mode)
 
 (put 'upcase-region 'disabled nil)
 
@@ -69,12 +66,16 @@
 (global-set-key (kbd "S-C-<left>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
+;;Move region/line
+(global-set-key (kbd "S-C-s-<up>") 'move-region-up)
+(global-set-key (kbd "S-C-s-<down>") 'move-region-down)
 
-(set-background-color "#fffaf0")
+;;Frame init
+(setq default-frame-alist
+      '((background-color . "#fffaf0") (fullscreen . fullboth)))
+
 (set-face-attribute 'region nil :background "#FFB72F")
 (set-face-attribute 'default nil :height 110)
-
-(toggle-fullscreen)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1) 
@@ -85,8 +86,7 @@
 
 (add-hook 'term-mode-hook (lambda () (linum-mode -1)))
 
-(setq auto-mode-alist
-      (cons '("\\.ly$" . LilyPond-mode) auto-mode-alist))
+;;(setq auto-mode-alist    (cons '("\\.ly$" . LilyPond-mode) auto-mode-alist))
 
 ;;ibuffer
 (setq ibuffer-saved-filter-groups
@@ -112,6 +112,17 @@
 (setq visible1-bell t)
 
 (setq ring-bell-function 'ignore)
+
+;;Dired mode customization
+(put 'dired-find-alternate-file 'disabled nil)
+(eval-after-load 'dired '(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
+(eval-after-load 'dired '(define-key dired-mode-map (kbd "a") 'dired-find-file))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 ;;==============================================================================================================================================================
 ;;=============================================================Package initialization===========================================================================
@@ -144,23 +155,12 @@
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
  '(custom-enabled-themes nil)
+ '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (multi-term logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
+    (csharp-mode multi-term logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.rambler.ru")
  '(smtpmail-smtp-service 25)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-;;Dired mode customization
-(put 'dired-find-alternate-file 'disabled nil)
-(eval-after-load 'dired '(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
-(eval-after-load 'dired '(define-key dired-mode-map (kbd "a") 'dired-find-file))

@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+if [[ "$DISPLAY" ]]; then
+        frame=`emacsclient -a '' -e "(member \"$DISPLAY\" (mapcar 'terminal-name (frames-on-display-list)))" 2>/dev/null`
+        [[ "$frame" == "nil" ]] && opts='-c' # if there is no frame open create one
+        [[ "${@/#-nw/}" == "$@" ]] && opts="$opts -n" # don't wait unless we've asked to run in a terminal
+else
+        opts='-nw'
+fi
+#echo $opts
+exec emacsclient -a '' $opts "$@"
