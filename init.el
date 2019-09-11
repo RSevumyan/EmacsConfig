@@ -84,7 +84,9 @@
 
 (add-hook 'json-mode-hook 'flycheck-mode)
 
-(add-hook 'term-mode-hook (lambda () (linum-mode -1)))
+(add-hook 'term-mode-hook (lambda ()
+			       (local-set-key (kbd "C-c C-k") 'term-char-mode)
+			       (define-key term-raw-map (kbd "C-c C-j") 'term-line-mode)))
 
 ;;(setq auto-mode-alist    (cons '("\\.ly$" . LilyPond-mode) auto-mode-alist))
 
@@ -106,8 +108,7 @@
           (lambda ()
 	    (ibuffer-auto-mode 1)
             (ibuffer-switch-to-saved-filter-groups "Def")
-	    (linum-mode -1)))
-
+	    (local-set-key  (kbd "C-x C-f") 'ido-find-file)))
 
 (setq visible1-bell t)
 
