@@ -18,7 +18,6 @@
   ;;Not implemented yet
   )
 
-
 ;;Function for moveing 20 columns backward
 (defun goto-twentycolumns-backward ()
   (interactive)

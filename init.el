@@ -32,12 +32,14 @@
 
 (require 'multi-scratch)
 
+(require 'ibuffer-settings)
+
 ;;(require 'lilypond-mode)
 
 (put 'upcase-region 'disabled nil)
 
 (loop
- for from across "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖ\ЭЯЧСМИТЬБЮ№"
+ for from across "йцукенгшщзхъфывапролджэячсмитьбЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖ\ЭЯЧСМИТЬБЮ№"
  for to   across "qwertyuiop[]asdfghjkl;'zxcvbnm,.QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>#"
  do
  (eval `(define-key key-translation-map (kbd ,(concat "C-" (string from))) (kbd ,(concat     "C-" (string to)))))
@@ -56,11 +58,11 @@
 (global-set-key (kbd "M-<right>") 'goto-twentycolumns-forward)
 (global-set-key (kbd "M-a") 'beginning-of-buffer)
 (global-set-key (kbd "M-e") 'end-of-buffer)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c C-s") 'multi-scratch-new)
 (global-set-key (kbd "C-c C-t") 'multi-term)
 (global-set-key (kbd "M-<left>") 'backward-sexp)
 (global-set-key (kbd "M-<right>") 'forward-sexp)
+(global-set-key (kbd "C-c h") 'hs-toggle-hiding)
 ;;Window size
 (global-set-key (kbd "S-C-<right>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<left>") 'enlarge-window-horizontally)
@@ -90,26 +92,6 @@
 
 ;;(setq auto-mode-alist    (cons '("\\.ly$" . LilyPond-mode) auto-mode-alist))
 
-;;ibuffer
-(setq ibuffer-saved-filter-groups
-      (quote (("Def"
-	       ("Terminal" (mode . term-mode))
-	       ("Dired" (mode . dired-mode))
-	       ("Scratch" (name . ".*scratch.*") )
-	       ("Help" (or (name . "\*Help\*")
-			   (name . "\*Apropos\*")
-			   (name . "\*info\*")
-			   (name . "\*Directory\*")
-			   (name . "\*Completions\*")))
-	       ("Emacs" (or (name . "^\\*Messages\\*$") (name . "^\\*GNU Emacs\\*$") (name . "^\\*Backtrace\\*$")))
-	       ))))
-
-(add-hook 'ibuffer-mode-hook
-          (lambda ()
-	    (ibuffer-auto-mode 1)
-            (ibuffer-switch-to-saved-filter-groups "Def")
-	    (local-set-key  (kbd "C-x C-f") 'ido-find-file)))
-
 (setq visible1-bell t)
 
 (setq ring-bell-function 'ignore)
@@ -118,12 +100,7 @@
 (put 'dired-find-alternate-file 'disabled nil)
 (eval-after-load 'dired '(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 (eval-after-load 'dired '(define-key dired-mode-map (kbd "a") 'dired-find-file))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(setq dired-listing-switches  "-ahlv  --group-directories-first")
 
 ;;==============================================================================================================================================================
 ;;=============================================================Package initialization===========================================================================
@@ -157,9 +134,25 @@
  '(column-number-mode t)
  '(custom-enabled-themes nil)
  '(inhibit-startup-screen t)
+ '(logview-additional-submodes
+   (quote
+    (("TOMCAT"
+      (format . "[TIMESTAMP] NAME THREAD LEVEL MESSAGE")
+      (levels . "SLF4J")
+      (timestamp "ISO 8601 datetime + millis")
+      (aliases))
+     ("PEGA"
+      (format . "TIMESTAMP [NAME] [THREAD] [ ] [ ] (NAME) LEVEL - MESSAGE")
+      (levels . "SLF4J")
+      (timestamp "PEGA")
+      (aliases)))))
+ '(logview-additional-timestamp-formats
+   (quote
+    (("PEGA"
+      (java-pattern . "yyyy-MM-dd hh:mm:ss,SSS")))))
  '(package-selected-packages
    (quote
-    (csharp-mode multi-term logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
+    (hideshow-org web datetime csharp-mode multi-term logview markdown-preview-mode markdown-mode vlf image+ magit json-mode)))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.rambler.ru")
  '(smtpmail-smtp-service 25)

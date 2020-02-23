@@ -1,14 +1,21 @@
 (provide 'xml-tools)
 
+(require 'hideshow)
+
+(require 'sgml-mode)
+
+(require 'nxml-mode)
+
 (add-to-list 'auto-mode-alist
-	     (cons (concat "\\." (regexp-opt '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss") t) "\\'")
-		   'nxml-mode))
-
-(setq auto-mode-alist (cons '("\\.xml$" . nxml-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.xsl$" . nxml-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.xhtml$" . nxml-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.page$" . nxml-mode) auto-mode-alist))
-
+	     (cons
+	      (concat "\\."
+		      (regexp-opt
+		       '("xml" "xsd" "sch" "rng" "xslt" "svg" "rss" "xhtml")
+		       t)
+		      "\\'")
+	      'nxml-mode)
+	     )
+ 
 (autoload 'xml-mode "nxml" "XML editing mode" t)
 
 (eval-after-load 'rng-loc
@@ -40,3 +47,19 @@
   )
 
 (global-set-key (kbd "C-M-b") 'format-xml)
+
+(add-to-list 'hs-special-modes-alist
+             '(nxml-mode
+               "<!--\\|<[^/>]*[^/]>"
+               "-->\\|</[^/>]*[^/]>"
+
+               "<!--"
+               sgml-skip-tag-forward
+               nil))
+
+(add-hook 'nxml-mode-hook 'hs-minor-mode)
+
+(add-hook 'sgml-mode-hook (lambda ()
+			       (local-set-key (kbd "M-<left>") 'sgml-skip-tag-backward)
+			       (local-set-key (kbd "M-<right>") 'sgml-skip-tag-forward)))
+
